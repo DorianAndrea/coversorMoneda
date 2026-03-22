@@ -42,4 +42,4 @@ async function convertirMoneda() {
 
     resultado.textContent = montoConvertido.toFixed(2);
 }
-convertirMoneda();
+
