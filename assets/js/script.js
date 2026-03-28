@@ -95,16 +95,6 @@ async function convertirMoneda() {
     const monedaSeleccionada = select.value;
     const montoPesos = parseFloat(inputPesos.value);
 
-    if (monedaSeleccionada === "") {
-      resultado.textContent = "Debe seleccionar una moneda.";
-      return;
-    }
-
-    if (isNaN(montoPesos) || montoPesos <= 0) {
-      resultado.textContent = "Debe ingresar un monto válido.";
-      return;
-    }
-
     const valorMoneda = conversores[monedaSeleccionada].valor;
     const montoConvertido = montoPesos / valorMoneda;
 
